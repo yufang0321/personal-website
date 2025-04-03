@@ -1,4 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f7f9fb; // 淺藍灰背景，護眼
+  color: #263238; // 深灰藍字體
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 通用主色與次色（方便用變數維護） */
+$primary-color: #90caf9;    // 藍色主色，溫柔不刺眼
+$secondary-color: #b0bec5;  // 淡灰藍輔色
+$accent-color: #5c6bc0;     // 深藍點綴色
+$card-bg: white;
+$card-radius: 12px;
+
+/* 卡片樣式 */
+.mat-card {
+  background-color: $card-bg;
+  border-radius: $card-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* 按鈕樣式調整 */
+button.mat-raised-button {
+  background-color: $primary-color;
+  color: white;
+  font-weight: 600;
+  text-transform: none;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+/* 技能標籤樣式（如 Angular, SCSS, Spring Boot） */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  
+    .tag {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background-color: #b0bec5;
+      color: #263238;
+    }
+  
+    @media (max-width: 480px) {
+      .tag {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+      }
+    }
+  }
+  
+
+/* 小節標題 */
+h2 {
+  font-weight: 700;
+  color: $accent-color;
+  margin-bottom: 16px;
+}

@@ -1,9 +1,27 @@
-<mat-toolbar color="primary">
-    <span>我的個人網站</span>
-    <span class="spacer"></span>
-    <a mat-button routerLink="/home">Home</a>
-    <a mat-button routerLink="/about">About</a>
-    <a mat-button routerLink="/projects">Projects</a>
-    <a mat-button routerLink="/resume">Resume</a>
-    <a mat-button routerLink="/contact">Contact</a>
-  </mat-toolbar>
+<mat-sidenav-container class="navbar-container">
+    <mat-sidenav #sidenav mode="over" class="mobile-menu">
+      <a routerLink="/home" (click)="sidenav.close()">Home</a>
+      <a routerLink="/about" (click)="sidenav.close()">About</a>
+      <a routerLink="/projects" (click)="sidenav.close()">Projects</a>
+      <a routerLink="/resume" (click)="sidenav.close()">Resume</a>
+      <a routerLink="/contact" (click)="sidenav.close()">Contact</a>
+    </mat-sidenav>
+  
+    <mat-toolbar class="custom-navbar">
+      <span class="logo">FANG'S WEBSITE</span>
+      <span class="spacer"></span>
+  
+      <nav class="desktop-links">
+        <a mat-button routerLink="/home">Home</a>
+        <a mat-button routerLink="/about">About</a>
+        <a mat-button routerLink="/projects">Projects</a>
+        <a mat-button routerLink="/resume">Resume</a>
+        <a mat-button routerLink="/contact">Contact</a>
+      </nav>
+  
+      <button mat-icon-button class="mobile-toggle" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+</mat-sidenav-container>
+  
