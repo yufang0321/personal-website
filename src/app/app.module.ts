@@ -7,7 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { ResumeComponent } from './pages/resume/resume.component';
+import { ArticleComponent } from './pages/article/article.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +21,7 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ResumeComponent,
+    ArticleComponent,
     ContactComponent,
     NavbarComponent
   ],
