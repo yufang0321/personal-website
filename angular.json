@@ -57,7 +57,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/personal-website/"
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
