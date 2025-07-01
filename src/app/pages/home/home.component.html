@@ -1,20 +1,39 @@
-<div class="hero">
-  <div class=" flex-center">
-      <img class="avatar" src="assets/avatar.png" alt="你的大頭照">
-      <h1>嗨，我是xx</h1>
-      <p class="subtitle">一位喜歡打造漂亮網站的前端開發者</p>
-      <button mat-raised-button color="accent" routerLink="/projects">看看我的作品</button>
+<div class="home-container">
+  <div class="navbar-container">
+    <div class="navbar-item">
+      <a (click)="scrollTo('experience')">EXPERIENCE</a>
+    </div>
+    <!-- <div class="navbar-item">
+      <a (click)="scrollTo('education')">EDUCATION</a>
+    </div> -->
+    <div class="navbar-item">
+      <a (click)="scrollTo('skills')">SKILLS</a>
+    </div>
+    <div class="navbar-item">
+      <a (click)="scrollTo('article')">ARTICLE</a>
+    </div>
   </div>
-  <div class="skill-block flex-center">
-    <div class="flex-center">
-      <span class="skills-title">我擅長的技術</span>
+  <div class="basic">
+    <div class="basic-content">
+      <div class="photo-wrapper">
+        <img src="assets/image/photo.jpg" alt="author-photo">
+      </div>
+      <div class="intro-text">
+        Hi! I'm Fang.
+        前端工程師
+      </div>
     </div>
-    <div class="tags">
-      <span class="tag">Angular</span>
-      <span class="tag">TypeScript</span>
-      <span class="tag">SCSS</span>
-      <span class="tag">Spring Boot</span>
-    </div>
+  </div>
+  <div class="experience" id="experience">
+    <div class="title">EXPERIENCE</div>
+  </div>
+  <!-- <div class="education" id="education">
+    <div class="title">EDUCATION</div>
+  </div> -->
+  <div class="skills" id="skills">
+    <div class="title">SKILLS</div>
+  </div>
+  <div class="contact" id="article">
+    <div class="title">ARTICLE</div>
   </div>
 </div>
-  

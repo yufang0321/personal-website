@@ -1,51 +1,101 @@
-.hero {
-    text-align: center;
-    padding: 80px 20px 40px;
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
-    h1 {
-      font-size: 40px;
-    }
+.navbar-container {
+  background-color: #fffffe;
+  width: 100%;
+  border:1px solid black;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+
   
-    .subtitle {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .avatar {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
+  .navbar-item{
+    font-size: 20px;
+    padding: 7px;
+    
+    :hover {
+      background-color: #ffd803;
     }
 
-    .flex-column-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-self: center;
-    }
-
-    .skills-title {
-      font-size: 20px;
-    }
-
-    .skill-block {
-      padding-top: 20px;
-    }
-  
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 28px;
-      }
-  
-      .subtitle {
-        font-size: 16px;
-      }
-  
-      .avatar {
-        width: 100px;
-        height: 100px;
-      }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: color 0.3s;
     }
   }
+}
+
+.basic {
+  width: 100%;
+  border:1px solid black;
   
+  .basic-content {
+    background-color: #e3f6f5;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; // ✨ 讓兩個區塊高度一致
+    height: 500px; // 可依實際需要調整
+    padding: 50px;
+
+    .photo-wrapper {
+      flex: 0 0 auto;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;       // 高度填滿整個父層
+        width: auto;        // 保持原寬高比例
+        object-fit: cover;  // 視覺更美觀（可視情況用 contain）
+        display: block;
+      }
+    }
+
+    .intro-text {
+      flex: 1;
+      padding: 16px;
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.title {
+  padding:20px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  width: 100%;
+  border:1px solid black;
+  height: 500px;
+}
+
+.education {
+  width: 100%;
+  border:1px solid black;
+  height: 500px;
+}
+
+.skills {
+  width: 100%;
+  border:1px solid black;
+  height: 500px;
+}
+
+.contact {
+  width: 100%;
+  border:1px solid black;
+  height: 500px;
+}
