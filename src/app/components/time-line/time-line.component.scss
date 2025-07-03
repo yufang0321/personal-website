@@ -1,0 +1,64 @@
+.timeline-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4a90e2;
+    z-index: 0;
+  }
+
+  .timeline-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .circle {
+      width: 14px;
+      height: 14px;
+      background: #4a90e2;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px #4a90e2;
+      margin-bottom: 10px;
+    }
+
+    .card {
+      width: 300px;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      .year {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 4px;
+      }
+
+      .title {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .desc {
+        margin-top: 6px;
+        font-size: 0.85rem;
+        color: #666;
+      }
+    }
+  }
+}

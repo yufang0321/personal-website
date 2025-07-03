@@ -1,0 +1,10 @@
+<div class="timeline-horizontal">
+  <div class="timeline-block" *ngFor="let exp of experiences">
+    <div class="circle"></div>
+    <div class="card">
+      <div class="year">{{ exp.year }}</div>
+      <div class="title">{{ exp.title }}｜{{ exp.company }}</div>
+      <div class="desc">{{ exp.description }}</div>
+    </div>
+  </div>
+</div>

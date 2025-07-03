@@ -1,15 +1,17 @@
 .home-container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F5F0CD;
 }
   
 .navbar-container {
-  background-color: #fffffe;
+  background-color: F5F0CD;
   width: 100%;
-  border:1px solid black;
+  border:2px solid 578FCA;
   height: 90px;
   display: flex;
   flex-direction: row;
@@ -18,11 +20,13 @@
 
   
   .navbar-item{
-    font-size: 20px;
-    padding: 7px;
+    font-size: 30px;
+    padding: 7px 30px;
+    color: #3674B5;
     
     :hover {
-      background-color: #ffd803;
+      // background-color: #ffc6c7;
+      color: #89a4c2;
     }
 
     a {
@@ -36,10 +40,9 @@
 
 .basic {
   width: 100%;
-  border:1px solid black;
+  border:2px solid #33272a;;
   
   .basic-content {
-    background-color: #e3f6f5;
     display: flex;
     justify-content: center;
     align-items: stretch; // ✨ 讓兩個區塊高度一致
@@ -61,15 +64,39 @@
 
     .intro-text {
       flex: 1;
-      padding: 16px;
-      background-color: #f5f5f5;
+      padding: 50px;
+      background-color: #ffe599;
+      .intro-text-title {
+        color: #33272a;
+        font-size: 40px;
+        font-family: 'fantasy';
+      }
+  
+      .intro-text-content {
+        color: #33272a;
+        font-family: 'Microsoft JhengHei';
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 125%;
+      }
     }
+
   }
 }
 
 .title {
+  height: 20%;
   padding:20px;
   font-size: 30px;
+  color: #33272a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,24 +105,24 @@
 
 .experience {
   width: 100%;
-  border:1px solid black;
+  border:2px solid #33272a;;
   height: 500px;
 }
 
 .education {
   width: 100%;
-  border:1px solid black;
+  border:2px solid #33272a;;
   height: 500px;
 }
 
 .skills {
   width: 100%;
-  border:1px solid black;
+  border:2px solid #33272a;;
   height: 500px;
 }
 
 .contact {
   width: 100%;
-  border:1px solid black;
+  border:2px solid #33272a;;
   height: 500px;
 }

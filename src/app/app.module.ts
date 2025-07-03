@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { TimeLineComponent } from './components/time-line/time-line.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { MatIconModule } from '@angular/material/icon';
     NavbarComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    TimeLineComponent
   ],
   providers: [
     provideAnimationsAsync()
