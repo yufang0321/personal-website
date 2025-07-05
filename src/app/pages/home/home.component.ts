@@ -25,7 +25,7 @@ export class HomeComponent {
       year: '2024.1 - 現在(1Y7M)',
       company: '傑報人力資源服務集團',
       title: '前端工程師',
-      description: '負責 Angular 專案開發、元件設計與部署流程建立。'
+      description: '人力系統、派遣系統開發，專注於 Angular 專案開發、元件設計。'
     }
   ];
 

@@ -3,33 +3,32 @@
     <div class="navbar-item">
       <a (click)="scrollTo('experience')">EXPERIENCE</a>
     </div>
-    <div class="navbar-item">
+    <!-- <div class="navbar-item">
       <a (click)="scrollTo('education')">EDUCATION</a>
-    </div>
+    </div> -->
     <div class="navbar-item">
       <a (click)="scrollTo('skills')">SKILLS</a>
     </div>
     <div class="navbar-item">
       <a (click)="scrollTo('article')">ARTICLE</a>
     </div>
+    <div class="navbar-item">
+      <a (click)="scrollTo('contact')">CONTACT</a>
+    </div>
   </div>
   <div class="basic">
     <div class="basic-content">
       <div class="photo-wrapper">
-        <img src="assets/image/photo.jpg" alt="author-photo">
+        <img src="assets/image/myphoto.jpg" alt="author-photo">
       </div>
       <div class="intro-text">
         <div class="intro-text-title">
-          Hi! I'm Fang.
+          <!-- Hi! I'm Fang. -->
         </div>
         <div class="intro-text-content">
-          <p>前端工程師<br>
+          <p>嗨！你好 我是玉芳<br>
+          <p>前端工程師<br><br>
           目前專注於Angular.js技術應用，喜歡乾淨簡潔的程式碼，注重使用者體驗與視覺美感，具備大型專案開發經驗。<br></p>
-          <!-- <ul>
-            <li>2024 求職、求才網專案開發(Angular/TypeScript)</li>
-            <li>2022-2023 電子發票主題分析網站改寫(JAVA/Spring boot/Vue)</li>
-            <li>2021 寺廟管理系統、補習班打卡系統開發(React.js/node.js)</li>
-          </ul> -->
         </div>
       </div>
     </div>
@@ -40,13 +39,16 @@
       <app-time-line [experiences]="myExperiences"></app-time-line>
     </div>
   </div>
-  <div class="education" id="education">
+  <!-- <div class="education" id="education">
     <div class="title">EDUCATION</div>
-  </div>
+  </div> -->
   <div class="skills" id="skills">
     <div class="title">SKILLS</div>
   </div>
-  <div class="contact" id="article">
+  <div class="article" id="article">
     <div class="title">ARTICLE</div>
+  </div>
+  <div class="contact" id="contact">
+    <div class="title">CONTACT</div>
   </div>
 </div>
