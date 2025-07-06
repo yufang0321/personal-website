@@ -17,6 +17,7 @@ import { SkillComponent } from './components/skill/skill.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CategoryComponent } from './pages/category/category.component';
     BlogComponent,
     AboutComponent,
     NavbarComponent,
-    CategoryComponent
+    CategoryComponent,
+    ErrorPageComponent
   ],
   imports: [
     CommonModule,
