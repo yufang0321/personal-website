@@ -157,6 +157,9 @@
       height: auto;
 
       .photo-wrapper {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
         width: 100%;
         height: auto;
 
@@ -167,6 +170,10 @@
       }
 
       .intro-text {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         padding: 30px;
         .intro-text-title {
           font-size: 2rem;
