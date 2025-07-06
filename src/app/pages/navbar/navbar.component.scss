@@ -2,39 +2,71 @@
 
 .navbar-container {
   background-color: $primary-color;
-  width: 100%;
   height: 90px;
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 20px;
 
-  .navbar-item {
-    font-size: 1.875rem;
-    padding: 7px 30px;
+  .navbar-hamburger {
+    display: none;
+    font-size: 2rem;
     color: $text-light;
+    cursor: pointer;
+  }
 
-    :hover {
-      color: $accent-color;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
+  .navbar-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+    .navbar-item {
+      font-size: 1.875rem;
+      padding: 10px 20px;
+      color: $text-light;
       transition: color 0.3s;
+      
+      :hover {
+        color: $accent-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
     }
   }
-}
 
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    height: auto;
+  @media (max-width: 768px) {
+    .navbar-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      background-color: $primary-color;
+      opacity: 0.9;
+      padding: 20px 0;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      z-index: 10;
+    }
+
+    .navbar-items.open {
+      display: flex;
+    }
+
+    .navbar-hamburger {
+      display: block;
+    }
+
     .navbar-item {
       font-size: 1.25rem;
-      padding: 10px;
     }
   }
 }

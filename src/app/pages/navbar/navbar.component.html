@@ -1,14 +1,22 @@
 <div class="navbar-container">
-  <div class="navbar-item">
-    <a (click)="navigateTo('home')">HOME</a>
+  <!-- 漢堡選單按鈕 -->
+  <div class="navbar-hamburger" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
   </div>
-  <div class="navbar-item">
-    <a (click)="navigateTo('about')">ABOUT</a>
-  </div>
-  <div class="navbar-item">
-    <a (click)="navigateTo('blog')">BLOG</a>
-  </div>
-  <div class="navbar-item">
-    <a (click)="navigateTo('category')">CATEGORY</a>
+
+  <!-- 導航選單 -->
+  <div class="navbar-items" [class.open]="menuOpen">
+    <div class="navbar-item">
+      <a (click)="navigateTo('home')">HOME</a>
+    </div>
+    <div class="navbar-item">
+      <a (click)="navigateTo('about')">ABOUT</a>
+    </div>
+    <div class="navbar-item">
+      <a (click)="navigateTo('blog')">BLOG</a>
+    </div>
+    <div class="navbar-item">
+      <a (click)="navigateTo('category')">CATEGORY</a>
+    </div>
   </div>
 </div>

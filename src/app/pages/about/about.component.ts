@@ -47,7 +47,8 @@ export class AboutComponent {
     {
       title: '工具與部署',
       skills: [
-        { name: 'Git / GitHub', level: 80 },
+        { name: 'Git / GitHub', level: 50 },
+        { name: 'Jasmine 自動化測試', level: 45 },
       ]
     }
   ];
