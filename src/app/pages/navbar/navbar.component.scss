@@ -2,7 +2,7 @@
 
 
 .navbar-container {
-  background-color: $light-bg;
+  background-color: $primary-color;
   width: 100%;
   height: 90px;
   display: flex;
@@ -14,7 +14,7 @@
   .navbar-item {
     font-size: 1.875rem;
     padding: 7px 30px;
-    color: $secondary-color;
+    color: $text-light;
 
     :hover {
       color: $accent-color;

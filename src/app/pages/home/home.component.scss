@@ -9,48 +9,24 @@
   align-items: center;
 }
 
-.navbar-container {
-  background-color: $light-bg;
-  width: 100%;
-  height: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .navbar-item {
-    font-size: 1.875rem;
-    padding: 7px 30px;
-    color: $secondary-color;
-
-    :hover {
-      color: $accent-color;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-      transition: color 0.3s;
-    }
-  }
-}
-
 .basic {
   width: 100%;
 
   .basic-content {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     height: 500px;
-    padding: 100px 200px;
+    padding: 50px 100px;
 
     .photo-wrapper {
+      margin-bottom: -88px;
       flex: 0 0 auto;
-      height: 100%;
+      height: 35%;
       overflow: hidden;
+      border-radius: 50%;
+      z-index: 2;
 
       img {
         height: 100%;
@@ -60,72 +36,49 @@
       }
     }
 
-    .intro-text {
+    .intro-content {
       flex: 1;
       padding: 50px;
-      background-color: $primary-color;
-
-      .intro-text-title {
-        color: #c4cfd5;
-        font-size: 2.5rem;
-        font-family: 'fantasy';
-      }
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 77, 115, 0.2), 0 4px 16px rgba(0, 77, 115, 0.3);
+      border-radius: 20px;
+      width: 90%;
 
       .intro-text-content {
-        color: #c4cfd5;
-        font-family: 'Noto Sans TC';
-        margin-top: 20px;
-        font-size: 1.5625rem;
-        line-height: 150%;
+        width: 100%;
+        color: $text;
+
+        .welcome {
+          font-family: 'Noto Sans TC';
+          margin-top: 20px;
+          font-size: 2rem;
+          line-height: 150%;
+        }
+
+        .introduce-title {
+          font-family: 'Noto Sans TC';
+          margin-top: 20px;
+          font-size: 1.5625rem;
+          line-height: 150%;
+        }
+
+        .introduce-content {
+          font-family: 'Noto Sans TC';
+          margin-top: 20px;
+          font-size: 1.2em;
+          line-height: 150%;
+        }
+
       }
     }
   }
-}
-
-.title {
-  height: 20%;
-  padding: 20px;
-  font-size: 1.875rem;
-  color: $secondary-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  height: auto;
-  padding: 50px 100px;
-}
-
-.experience,
-.education,
-.skills,
-.blog,
-.contact {
-  width: 100%;
-  height: auto;
-  padding-bottom: 50px;
-}
-
-.experience,
-.blog {
-  background: $light-bg;
 }
 
 // -------------------------------
 // ✅ RWD 區塊
 // -------------------------------
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    height: auto;
-    .navbar-item {
-      font-size: 1.25rem;
-      padding: 10px;
-    }
-  }
 
+@media (max-width: 768px) {
   .basic {
     .basic-content {
       flex-direction: column;
@@ -144,9 +97,6 @@
 
       .intro-text {
         padding: 30px;
-        .intro-text-title {
-          font-size: 2rem;
-        }
 
         .intro-text-content {
           font-size: 1.25rem;

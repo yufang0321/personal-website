@@ -46,8 +46,10 @@
     align-items: stretch;
     height: 500px;
     padding: 100px 200px;
-
+    
     .photo-wrapper {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
       flex: 0 0 auto;
       height: 100%;
       overflow: hidden;
@@ -61,6 +63,8 @@
     }
 
     .intro-text {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
       flex: 1;
       padding: 50px;
       background-color: $primary-color;
@@ -77,6 +81,25 @@
         margin-top: 20px;
         font-size: 1.5625rem;
         line-height: 150%;
+      }
+
+      .contact-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .a-link {
+        font-size: 1.875rem;
+        color: $secondary-color;
+        display: flex;
+        margin-right: 10px;
+        color: $accent-color;
+      }
+      
+      a.a-link {
+        text-decoration: none;
       }
     }
   }
@@ -98,19 +121,19 @@
   padding: 50px 100px;
 }
 
+
+
 .experience,
 .education,
 .skills,
-.blog,
-.contact {
+.blog {
   width: 100%;
   height: auto;
   padding-bottom: 50px;
 }
 
 .experience,
-.blog,
-.contact {
+.blog {
   background: $light-bg;
 }
 

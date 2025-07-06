@@ -2,4 +2,17 @@ $primary-color: #004d73;
 $secondary-color: #344b46;
 $accent-color: #7bb1a5;
 $light-bg: #e8f2fb;
+$text: #8a9397;
 $text-light: #c4cfd5;
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li::before {
+    content: '-';
+    color: $secondary-color;
+    font-size: 24px;
+    margin-right: 10px;
+  }
