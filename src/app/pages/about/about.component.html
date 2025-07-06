@@ -1,1 +1,31 @@
-<p>about works!</p>
+<div class="basic">
+  <div class="basic-content">
+    <div class="photo-wrapper">
+      <img src="assets/image/myphoto.jpg" alt="author-photo">
+    </div>
+    <div class="intro-text">
+      <div class="intro-text-title">
+      </div>
+      <div class="intro-text-content">
+        <p>嗨！你好 我是玉芳<br>
+        <p>前端工程師<br><br>
+        目前專注於Angular.js技術應用，喜歡乾淨簡潔的程式碼，注重使用者體驗與視覺美感，具備大型專案開發經驗。<br></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="experience" id="experience">
+  <div class="title">EXPERIENCE</div>
+  <div class="content animate__bounceIn">
+    <app-time-line [experiences]="myExperiences"></app-time-line>
+  </div>
+</div>
+<div class="skills" id="skills">
+  <div class="title">SKILLS</div>
+  <div class="content">
+    <app-skill [skillGroups]="mySkillGroups"></app-skill>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <div class="title">CONTACT</div>
+</div>

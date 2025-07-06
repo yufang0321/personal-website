@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { ArticleComponent } from './pages/article/article.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { AboutComponent } from './pages/about/about.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 const routes: Routes = [
   // loading interceptor
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'article', component: ArticleComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'category', component: CategoryComponent },
 ];
 
 @NgModule({

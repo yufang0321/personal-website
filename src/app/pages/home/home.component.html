@@ -1,21 +1,4 @@
 <div class="home-container">
-  <div class="navbar-container">
-    <div class="navbar-item">
-      <a (click)="scrollTo('experience')">EXPERIENCE</a>
-    </div>
-    <!-- <div class="navbar-item">
-      <a (click)="scrollTo('education')">EDUCATION</a>
-    </div> -->
-    <div class="navbar-item">
-      <a (click)="scrollTo('skills')">SKILLS</a>
-    </div>
-    <div class="navbar-item">
-      <a (click)="scrollTo('article')">ARTICLE</a>
-    </div>
-    <div class="navbar-item">
-      <a (click)="scrollTo('contact')">CONTACT</a>
-    </div>
-  </div>
   <div class="basic">
     <div class="basic-content">
       <div class="photo-wrapper">
@@ -23,35 +6,14 @@
       </div>
       <div class="intro-text">
         <div class="intro-text-title">
-          <!-- Hi! I'm Fang. -->
         </div>
         <div class="intro-text-content">
+          <!-- 改為關於本站 -->
           <p>嗨！你好 我是玉芳<br>
           <p>前端工程師<br><br>
           目前專注於Angular.js技術應用，喜歡乾淨簡潔的程式碼，注重使用者體驗與視覺美感，具備大型專案開發經驗。<br></p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="experience" id="experience">
-    <div class="title">EXPERIENCE</div>
-    <div class="content animate__bounceIn">
-      <app-time-line [experiences]="myExperiences"></app-time-line>
-    </div>
-  </div>
-  <!-- <div class="education" id="education">
-    <div class="title">EDUCATION</div>
-  </div> -->
-  <div class="skills" id="skills">
-    <div class="title">SKILLS</div>
-    <div class="content">
-      <app-skill [skillGroups]="mySkillGroups"></app-skill>
-    </div>
-  </div>
-  <div class="article" id="article">
-    <div class="title">ARTICLE</div>
-  </div>
-  <div class="contact" id="contact">
-    <div class="title">CONTACT</div>
   </div>
 </div>
