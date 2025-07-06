@@ -8,7 +8,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ArticleComponent } from './pages/article/article.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -16,6 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { TimeLineComponent } from './components/time-line/time-line.component';
 import { CommonModule } from '@angular/common';
+import { SkillComponent } from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +24,7 @@ import { CommonModule } from '@angular/common';
     AboutComponent,
     ProjectsComponent,
     ArticleComponent,
-    ContactComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     CommonModule,
@@ -35,7 +34,8 @@ import { CommonModule } from '@angular/common';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    TimeLineComponent
+    TimeLineComponent,
+    SkillComponent
   ],
   providers: [
     provideAnimationsAsync()

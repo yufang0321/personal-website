@@ -1,3 +1,5 @@
+@use '../../../style/variables' as *;
+
 .home-container {
   width: 100%;
   height: 100%;
@@ -5,28 +7,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: #dbebfa;
 }
-  
+
 .navbar-container {
-  background-color: #dbebfa;
+  background-color: $light-bg;
   width: 100%;
-  // border:2px solid #344b46;
   height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: right;
   align-items: center;
+  flex-wrap: wrap;
 
-  
-  .navbar-item{
-    font-size: 30px;
+  .navbar-item {
+    font-size: 1.875rem;
     padding: 7px 30px;
-    color: #344b46;
-    
+    color: $secondary-color;
+
     :hover {
-      // background-color: #ffc6c7;
-      color: #7bb1a5;
+      color: $accent-color;
     }
 
     a {
@@ -40,12 +39,11 @@
 
 .basic {
   width: 100%;
-  // border:2px solid #344b46;
-  
+
   .basic-content {
     display: flex;
     justify-content: center;
-    align-items: stretch; // 讓兩個區塊高度一致
+    align-items: stretch;
     height: 500px;
     padding: 100px 200px;
 
@@ -55,9 +53,9 @@
       overflow: hidden;
 
       img {
-        height: 100%;       // 高度填滿整個父層
-        width: auto;        // 保持原寬高比例
-        object-fit: cover;  // 視覺更美觀（可視情況用 contain）
+        height: 100%;
+        width: auto;
+        object-fit: cover;
         display: block;
       }
     }
@@ -65,30 +63,30 @@
     .intro-text {
       flex: 1;
       padding: 50px;
-      background-color: #004d73;
+      background-color: $primary-color;
+
       .intro-text-title {
         color: #c4cfd5;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-family: 'fantasy';
       }
-  
+
       .intro-text-content {
         color: #c4cfd5;
-        font-family: 'Microsoft JhengHei';
+        font-family: 'Noto Sans TC';
         margin-top: 20px;
-        font-size: 25px;
-        line-height: 130%;
+        font-size: 1.5625rem;
+        line-height: 150%;
       }
     }
-
   }
 }
 
 .title {
   height: 20%;
-  padding:20px;
-  font-size: 30px;
-  color: #344b46;
+  padding: 20px;
+  font-size: 1.875rem;
+  color: $secondary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,40 +95,72 @@
 
 .content {
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 100px;
 }
 
-.experience {
-  background: #e8f2fb;
-  width: 100%;
-  // border:2px solid #344b46;;
-  height: 500px;
-}
-
-.education {
-  width: 100%;
-  // border:2px solid #344b46;;
-  height: 500px;
-}
-
-.skills {
-  width: 100%;
-  // border:2px solid #344b46;;
-  height: 500px;
-}
-
-.article {
-  background: #e8f2fb;
-  width: 100%;
-  // border:2px solid #344b46;;
-  height: 500px;
-}
-
+.experience,
+.education,
+.skills,
+.article,
 .contact {
   width: 100%;
-  // border:2px solid #344b46;;
-  height: 500px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.experience,
+.article {
+  background: $light-bg;
+}
+
+// -------------------------------
+// ✅ RWD 區塊
+// -------------------------------
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    .navbar-item {
+      font-size: 1.25rem;
+      padding: 10px;
+    }
+  }
+
+  .basic {
+    .basic-content {
+      flex-direction: column;
+      padding: 50px 20px;
+      height: auto;
+
+      .photo-wrapper {
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .intro-text {
+        padding: 30px;
+        .intro-text-title {
+          font-size: 2rem;
+        }
+
+        .intro-text-content {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
 }

@@ -1,0 +1,12 @@
+<section class="skill-section">
+  <div class="skill-group" *ngFor="let category of skillGroups">
+    <h3 class="group-title">{{ category.title }}</h3>
+
+    <div class="skill-item" *ngFor="let skill of category.skills">
+      <div class="skill-name">{{ skill.name }}</div>
+      <div class="skill-bar">
+        <div class="skill-level" [style.width.%]="skill.level"></div>
+      </div>
+    </div>
+  </div>
+</section>
