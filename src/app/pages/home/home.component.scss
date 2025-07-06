@@ -1,74 +1,74 @@
-@use '../../../style/variables' as *;
+@use "../../../style/variables" as *;
 
 .home-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 20px;
 }
 
-.basic {
+.basic-content {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+  min-height: auto; /* 調整為自動高度以便更適應不同內容 */
+  box-sizing: border-box;
 
-  .basic-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-    padding: 50px 100px;
+  .photo-wrapper {
+    margin-bottom: 30px;
+    flex: 0 0 auto;
+    height: 35%;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 2;
+    max-width: 150px; /* 限制圖片大小，避免太大 */
+    width: 100%;
 
-    .photo-wrapper {
-      margin-bottom: -88px;
-      flex: 0 0 auto;
-      height: 35%;
-      overflow: hidden;
-      border-radius: 50%;
-      z-index: 2;
-
-      img {
-        height: 100%;
-        width: auto;
-        object-fit: cover;
-        display: block;
-      }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
     }
+  }
 
-    .intro-content {
-      flex: 1;
-      padding: 50px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 77, 115, 0.2), 0 4px 16px rgba(0, 77, 115, 0.3);
-      border-radius: 20px;
-      width: 90%;
+  .intro-content {
+    flex: 1;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 77, 115, 0.2),
+      0 4px 16px rgba(0, 77, 115, 0.3);
+    border-radius: 20px;
+    width: 90%;
+    box-sizing: border-box;
 
-      .intro-text-content {
-        width: 100%;
-        color: $text;
+    .intro-text-content {
+      width: 100%;
+      color: $text;
 
-        .welcome {
-          font-family: 'Noto Sans TC';
-          margin-top: 20px;
-          font-size: 2rem;
-          line-height: 150%;
-        }
+      .welcome {
+        font-family: "Noto Sans TC";
+        margin-top: 20px;
+        font-size: 2rem;
+        line-height: 1.5;
+      }
 
-        .introduce-title {
-          font-family: 'Noto Sans TC';
-          margin-top: 20px;
-          font-size: 1.5625rem;
-          line-height: 150%;
-        }
+      .introduce-title {
+        font-family: "Noto Sans TC";
+        margin-top: 20px;
+        font-size: 1.5625rem;
+        line-height: 1.5;
+      }
 
-        .introduce-content {
-          font-family: 'Noto Sans TC';
-          margin-top: 20px;
-          font-size: 1.2em;
-          line-height: 150%;
-        }
-
+      .introduce-content {
+        font-family: "Noto Sans TC";
+        margin-top: 20px;
+        font-size: 1.2em;
+        line-height: 1.5;
       }
     }
   }
@@ -79,38 +79,62 @@
 // -------------------------------
 
 @media (max-width: 768px) {
-  .basic {
-    .basic-content {
-      flex-direction: column;
-      padding: 50px 20px;
-      height: auto;
+  .basic-content {
+    flex-direction: column;
+    padding: 30px 20px; /* 改變 padding 以適應小屏幕 */
+    height: auto;
 
-      .photo-wrapper {
-        width: 100%;
-        height: auto;
+    .photo-wrapper {
+      width: 80%;
+      height: 80%;
+      max-width: 120px;
+    }
 
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
+    .intro-content {
+      padding: 30px;
+      width: 100%; /* 確保內容不超過寬度 */
 
-      .intro-text {
-        padding: 30px;
-
-        .intro-text-content {
-          font-size: 1.25rem;
-        }
+      .intro-text-content {
+        font-size: 1rem; /* 縮小字體以適應小屏幕 */
       }
     }
   }
 
-  .title {
+  .welcome {
     font-size: 1.5rem;
-    padding: 10px;
   }
 
-  .content {
+  .introduce-title {
+    font-size: 1.4rem;
+  }
+
+  .introduce-content {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .basic-content {
     padding: 20px;
+  }
+
+  .photo-wrapper {
+    margin-bottom: 15px; /* 縮小圖片底部間距 */
+  }
+
+  .intro-content {
+    padding: 20px;
+  }
+
+  .welcome {
+    font-size: 1.2rem;
+  }
+
+  .introduce-title {
+    font-size: 1.3rem;
+  }
+
+  .introduce-content {
+    font-size: 1rem;
   }
 }
