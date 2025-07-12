@@ -6,6 +6,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { BlogArticleListComponent } from './pages/blog-article-list/blog-article-list.component';
 
 const routes: Routes = [
   // loading interceptor
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'blogArticle/:id', component: BlogArticleListComponent },
   { path: 'about', component: AboutComponent },
   { path: 'category', component: CategoryComponent },
   { path: '**', component: ErrorPageComponent },

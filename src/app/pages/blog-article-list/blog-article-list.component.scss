@@ -1,0 +1,141 @@
+@use "../../../style/variables" as *;
+section.page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .basic-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    min-height: auto; /* 調整為自動高度以便更適應不同內容 */
+    box-sizing: border-box;
+  
+    .photo-wrapper {
+      margin-bottom: 30px;
+      flex: 0 0 auto;
+      height: 35%;
+      overflow: hidden;
+      border-radius: 50%;
+      z-index: 2;
+      max-width: 150px; /* 限制圖片大小，避免太大 */
+      width: 100%;
+  
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  
+    .intro-content {
+      flex: 1;
+      padding: 50px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 77, 115, 0.2),
+        0 4px 16px rgba(0, 77, 115, 0.3);
+      border-radius: 20px;
+      width: 90%;
+      box-sizing: border-box;
+  
+      .intro-text-content {
+        width: 100%;
+        color: $text;
+  
+        .title {
+          font-family: "Noto Sans TC";
+          margin-top: 20px;
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+  
+        .introduce-content {
+          font-family: "Noto Sans TC";
+          margin-top: 20px;
+          font-size: 1.2em;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  
+  // -------------------------------
+  // ✅ RWD 區塊
+  // -------------------------------
+  
+  @media (max-width: 768px) {
+    .basic-content {
+      flex-direction: column;
+      padding: 30px 20px; /* 改變 padding 以適應小屏幕 */
+      height: auto;
+  
+      .photo-wrapper {
+        width: 80%;
+        height: 80%;
+        max-width: 120px;
+      }
+  
+      .intro-content {
+        padding: 30px;
+        width: 100%; /* 確保內容不超過寬度 */
+  
+        .intro-text-content {
+          font-size: 1rem; /* 縮小字體以適應小屏幕 */
+        }
+      }
+    }
+  
+    .welcome {
+      font-size: 1.5rem;
+    }
+  
+    .introduce-title {
+      font-size: 1.4rem;
+    }
+  
+    .introduce-content {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .basic-content {
+      padding: 20px;
+    }
+  
+    .photo-wrapper {
+      margin-bottom: 15px; /* 縮小圖片底部間距 */
+    }
+  
+    .intro-content {
+      padding: 20px;
+    }
+  
+    .welcome {
+      font-size: 1.2rem;
+    }
+  
+    .introduce-title {
+      font-size: 1.3rem;
+    }
+  
+    .introduce-content {
+      font-size: 1rem;
+    }
+  }
+  
+  

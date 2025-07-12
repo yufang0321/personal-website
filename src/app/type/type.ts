@@ -14,3 +14,10 @@ export interface SkillGroup {
   title: string;
   skills: Skill[];
 }
+
+export interface Article {
+  id: string;
+  title: string;
+  description: string;
+  coverImage: string;
+}

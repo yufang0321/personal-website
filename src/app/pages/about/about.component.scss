@@ -137,9 +137,6 @@
   background: $light-bg;
 }
 
-// -------------------------------
-// ✅ RWD 區塊
-// -------------------------------
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;

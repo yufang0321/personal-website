@@ -1,0 +1,9 @@
+<div class="blog-list" >
+  <div class="blog-card" *ngFor="let article of articleList" (click)="goToArticle(article.id)">
+    <img class="blog-cover" [src]="article.coverImage" alt="{{ article.title }} 的封面圖">
+    <div class="blog-content">
+      <h2 class="blog-title">{{ article.title }}</h2>
+      <p class="blog-description">{{ article.description }}</p>
+    </div>
+  </div>
+</div>

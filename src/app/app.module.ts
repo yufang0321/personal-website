@@ -19,6 +19,8 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { BuildingComponent } from './components/building/building.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BlogArticleListComponent } from './pages/blog-article-list/blog-article-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { BuildingComponent } from './components/building/building.component';
     NavbarComponent,
     CategoryComponent,
     ErrorPageComponent,
+    BlogArticleListComponent,
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,8 @@ import { BuildingComponent } from './components/building/building.component';
     MatIconModule,
     TimeLineComponent,
     SkillComponent,
-    BuildingComponent
+    BuildingComponent,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
