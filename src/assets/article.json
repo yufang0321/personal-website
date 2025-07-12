@@ -1,8 +1,8 @@
 [
     {
       "id": "25071201",
-      "title": "如何打造一個前端部落格",
-      "description": "使用 Angular + Markdown 打造簡易部落格平台",
+      "title": "Angular infinite scrolling",
+      "description": "Angular + DevExtreme 的 dx-list + Rxjs 製作無限滾動功能",
       "coverImage": "assets/image/covers/25071201.jpg"
     }
 ]
