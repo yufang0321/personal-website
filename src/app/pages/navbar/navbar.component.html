@@ -6,16 +6,16 @@
 
   <!-- 導航選單 -->
   <div class="navbar-items" [class.open]="menuOpen">
-    <div class="navbar-item">
+    <div class="navbar-item" [ngClass]="nowPage==='/home'?'selected':''">
       <a (click)="navigateTo('home')">HOME</a>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item" [ngClass]="nowPage==='/about'?'selected':''">
       <a (click)="navigateTo('about')">ABOUT</a>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item" [ngClass]="nowPage==='/blog'?'selected':''">
       <a (click)="navigateTo('blog')">BLOG</a>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item" [ngClass]="nowPage==='/category'?'selected':''">
       <a (click)="navigateTo('category')">CATEGORY</a>
     </div>
   </div>

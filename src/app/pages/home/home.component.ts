@@ -9,6 +9,12 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
+
+  goToArticle(id: string) {
+    this.router.navigate(['/blogArticle', id]);
+  }
 
 }

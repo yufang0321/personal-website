@@ -72,6 +72,17 @@
       }
     }
   }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media (max-width: 768px) {

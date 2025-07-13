@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-building',
@@ -10,4 +11,11 @@ import { Component } from '@angular/core';
 })
 export class BuildingComponent {
 
+  constructor(
+    private router: Router
+  ) {}
+
+  goHome() {
+    this.router.navigate(['/home'])
+  }
 }

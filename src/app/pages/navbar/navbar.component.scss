@@ -40,6 +40,10 @@
         transition: color 0.3s;
       }
     }
+
+    .selected {
+      color: $accent-color;
+    }
   }
 
   @media (max-width: 768px) {
