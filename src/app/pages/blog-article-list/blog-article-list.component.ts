@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { MarkdownService } from '../../services/markdown.service';
 import { ActivatedRoute } from '@angular/router';
 import { marked } from 'marked';
 import { catchError, from, of, switchMap } from 'rxjs';

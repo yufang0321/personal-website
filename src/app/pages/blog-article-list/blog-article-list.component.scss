@@ -63,7 +63,7 @@ section.page {
           line-height: 1.5;
         }
   
-        .introduce-content {
+        .article-content {
           font-family: "Noto Sans TC";
           margin-top: 20px;
           font-size: 1.2em;
@@ -71,10 +71,29 @@ section.page {
         }
       }
     }
+
+  }
+  .blog-post-content {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+  
+  .blog-post-content pre, .blog-post-content code {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  // 使用:ng-deep 覆蓋markdown 套件內建
+  ::ng-deep .blog-post-content pre {
+    white-space: pre-wrap !important;
   }
   
   // -------------------------------
-  // ✅ RWD 區塊
+  // RWD 區塊
   // -------------------------------
   
   @media (max-width: 768px) {
@@ -103,11 +122,11 @@ section.page {
       font-size: 1.5rem;
     }
   
-    .introduce-title {
+    .article-title {
       font-size: 1.4rem;
     }
   
-    .introduce-content {
+    .article-content {
       font-size: 1.1rem;
     }
   }
@@ -129,11 +148,11 @@ section.page {
       font-size: 1.2rem;
     }
   
-    .introduce-title {
+    .article-title {
       font-size: 1.3rem;
     }
   
-    .introduce-content {
+    .article-content {
       font-size: 1rem;
     }
   }
