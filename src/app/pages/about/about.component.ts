@@ -34,6 +34,8 @@ export class AboutComponent {
       title: '前端技術',
       skills: [
         { name: 'Angular', level: 85 },
+        { name: 'Vue', level: 75 },
+        { name: 'React', level: 50 },
         { name: 'TypeScript', level: 80 },
         { name: 'RxJS', level: 70 }
       ]

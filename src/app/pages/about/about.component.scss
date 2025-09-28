@@ -137,6 +137,62 @@
   background: $light-bg;
 }
 
+@media (min-width: 767px) and (max-width: 1245px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    .navbar-item {
+      font-size: 1.25rem;
+      padding: 10px;
+    }
+  }
+
+  .basic {
+    .basic-content {
+      flex-direction: column;
+      padding: 50px 20px;
+      height: auto;
+
+      .photo-wrapper {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .intro-text {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 30px;
+        .intro-text-title {
+          font-size: 2rem;
+        }
+
+        .intro-text-content {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
